@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row align-items-center">
+            
+    <div class="col-md-7">
+        <form method="post">
+            <h4 class="mb-4">Drop Us A Line</h4>
+            {% csrf_token %}
+            <div class="form-row">
+                <div class="form-group col-sm-4">
+                    <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" value="{% if request.POST.name %}{{ request.POST.name }}{% endif %}" placeholder="Name">
+                </div>
+                <div class="form-group col-sm-4">
+                    <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" value=""{% if request.POST.email %}{{ request.POST.email }}{% endif %} placeholder="Email">
+                </div>
+                <div class="form-group col-12">
+                    <textarea name="message" id="" cols="30" rows="4" class="form-control text-white rounded-0 bg-transparent" required="required" placeholder="Enter the text to detect bullying">{% if request.POST.message %}{{ request.POST.message }}{% endif %}</textarea>
+                </div>
+                <div class="form-group col-12 mb-0">
+                    <button class="btn btn-primary rounded w-md mt-3" type="submit">Scan Your Test</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-5">
+        {% if is_predicted  %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mt-5">
+                    <div class="card rounded">
+                        <div class="card-header text-primary">
+                          Result
+                        </div>
+                        <div class="card-body text-dark">
+                            {% if prediction_safe %}
+                            <button class="btn btn-success btn-lg text-white">✅ The Text Seems to be SAFE</button>
+                            <p class="text-success"> The text is found to be safe and can be proceeded with its propose! </p>
+                            {% else  %}
+                            <button class="btn btn-danger btn-lg text-white">⚠️ Bullying Text Found</button>
+                            <p class="text-danger">  The text "{{ request.POST.message }} Seems to be a bullying one or might create a negative feeling to others! Please take care of text.</p>
+                            <p class="text-muted">Hint: We recommend to use the platforms like ChatGPT to rewrite the content in a polite manner.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+{% endblock %}

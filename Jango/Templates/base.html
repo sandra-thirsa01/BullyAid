@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>BullyAid</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	
+    <link href="{% static  'css/leadmark.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="oopps" src="{% static 'imgs/logo1.png' %}" alt="">
+            
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Impacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">BullyDetector</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle">Cyber BUllying Detector</h1>
+            <h1 class="title">BullyAid</h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    <section  id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">ABOUT</h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3">This Website is to raise awareness of Cyber Bullying and developing a Bully Detector.</h6>
+
+            <div class="row">
+                <p>Cyberbullying is bullying with the use of digital technologies. It can take place on social media, messaging platforms, gaming platforms and mobile phones. It is repeated behaviour, aimed at scaring, angering or shaming those who are targeted.When you experience cyberbullying you might start to feel ashamed, nervous, anxious and insecure about what people say or think about you. This can lead to withdrawing from friends and family, negative thoughts and self-talk, feeling guilty about things you did or did not do, or feeling that you are being judged negatively.</p>
+                                
+            </div>
+        </div>
+    </section>
+    <!-- End OF Service Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">TIPS</h6>
+              
+                    <p>1.EDUCATE YOURSELF <br>
+                       <br><br>
+                        2. PROTECT YOUR PASSWORD <br>
+                       <br><br>
+                        3. KEEP PHOTOS “PG” <br>
+                      <br><br>
+                        4. NEVER OPEN UNIDENTIFIED OR UNSOLICITED MESSAGES <br>
+                      <br><br>
+                        5. LOG OUT OF ONLINE ACCOUNTS <br>
+                     <br><br> <img alt="oopps" src="{% static 'imgs/ab3.jpeg' %}" alt="" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <img alt="oopps" src="{% static 'imgs/ab.jpeg' %}" alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img alt="oopps" src="{% static 'imgs/ab2.jpeg' %}"alt="" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4">
+                            <p>   6. PAUSE BEFORE YOU POST <br>
+                               <br><br>
+                                7. RAISE AWARENESS <br>
+                               <br><br>
+                                8. SETUP PRIVACY CONTROLS <br>
+                               <br><br>
+                                9. “GOOGLE” YOURSELF <br>
+                              <br><br>
+                                10. DON’T BE A CYBERBULLY YOURSELF <br>
+                              <br><br> </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h6 class="section-title text-center">CATEGORY</h6>
+            <h6 class="section-subtitle mb-5 text-center">Different types of cyberbullying</h6>
+            <div class="filters">
+                <a href="#" data-filter=".new" class="active">
+                    All
+                </a>
+                <a href="#" data-filter=".advertising">
+                   Cyberstakling
+                </a>
+                <a href="#" data-filter=".branding">
+                  Textual
+                </a>
+                <a href="#" data-filter=".web">
+                    General
+                </a>
+            </div>
+            <div class="portfolio-container row"> 
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/ang.jpg' %}"class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">GENERAL</h6>
+                                <p class="subtitle">doxing</p>
+                            </div>
+                        </div>   
+                    </div>             
+                </div>
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/troll.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">GENERAL</h6>
+                                <p class="subtitle">trolling</p>
+                            </div>
+                        </div> 
+                    </div>                         
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/imperson.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">CYBERSTALKING</h6>
+                                <p class="subtitle">impersonation</p>
+                            </div>
+                        </div>    
+                    </div>              
+                </div> 
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/st.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">GENERAL</h6>
+                                <p class="subtitle">sextortion</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+            </div>
+            <div class="col-md-6 col-lg-4 advertising"> 
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/stalking.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">CYBERSTALKING</h6>
+                                <p class="subtitle">stalking by proxy!</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/privacy.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                       <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">CYBERSTALKING</h6>
+                                <p class="subtitle">invasion of privacy</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 advertising new"> 
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/threats.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">CYBERSTALKING</h6>
+                                <p class="subtitle">cyber threats</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div> 
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/oh.jpg' %}"class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">TEXTUAL</h6>
+                                <p class="subtitle">harrasment</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/hate.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">TEXTUAL</h6>
+                                <p class="subtitle">hate speech</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div> 
+                
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img alt="oopps" src="{% static 'imgs/insult.jpg' %}" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">TEXTUAL</h6>
+                                <p class="subtitle">insults</p>
+                            </div>
+                        </div>
+                    </div>                                                   
+                </div>
+            </div>   
+        </div>            
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h6 class="section-title mb-0 text-center">IMPACTS</h6>
+            <h6 class="section-subtitle mb-5 text-center">Cyberbullying can have significant and long-lasting impacts on the individuals who experience it.</h6>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img alt="oopps" src="{% static 'imgs/academic.jpg' %}" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Academic and Social Consequences</h6>
+                            <p>Cyberbullying can negatively affect a victim's academic performance.Additionally, victims may withdraw from social activities, leading to isolation and impaired social relationships.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img alt="oopps" src="{% static 'imgs/security.jpg' %}" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Cybersecurity Concerns</h5>
+                            <p>Cyberbullying can also pose cybersecurity risks for victims. Personal information shared or stolen during cyberbullying incidents can be used for identity theft, hacking, or further harassment.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4">
+                        <img alt="oopps" src="{% static 'imgs/phy.jpg' %}" alt="" class="card-img-top w-100">
+                        <div class="card-body">                         
+                            <h6 class="card-title">Physical Health & Mental Problems</h6>
+                            <p>The stress and emotional turmoil resulting from cyberbullying can manifest in physical health issues. Victims may experience headaches, stomachaches, sleep disturbances, and other stress-related symptoms. Prolonged exposure to cyberbullying can also contribute to long-term physical health problems.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+    <section class="section" id="testmonial">
+        <div class="container">
+            <h6 class="section-title text-center mb-0">CONTACTS</h6>
+            <h6 class="section-subtitle mb-5 text-center">cybercrime reporting contacts</h6>
+            <div class="row">
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img alt="oopps" src="{% static 'imgs/_on.jpg' %}" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">CYBERSECURITY HELPLINE</h6>
+                                         
+                                </div>
+                            </div>
+                            <p class="mb-0">1930</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img alt="oopps" src="{% static 'imgs/mail.jpg' %}" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">CYBERDOME</h6>
+                                  
+
+                                    
+                                </div>
+                            </div>
+                            <p class="mb-0"> cyberdome.pol@kerala.gov.in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 my-md-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="media align-items-center mb-3">
+                                <img alt="oopps" src="{% static 'imgs/site.jpg' %}" alt="">
+                                <div class="media-body">
+                                    <h6 class="mt-1 mb-0">WEBSITE</h6>
+                                          
+                                </div>
+                            </div>
+                            <p class="mb-0">www.cybercrime.gov.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Testmonial Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+           
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <p class="mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, Created By Cyberml <a href="https://www.devcrud.com" target="_blank">BullyAid.</a>  All rights reserved </p>     
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="{% static 'leadmark.js' %}"></script>
+
+    {% if request.POST.message %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            window.scrollTo(0, document.body.scrollHeight);
+        })
+    </script>
+    {% endif %}
+</body>
+</html>
